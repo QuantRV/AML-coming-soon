@@ -78,6 +78,6 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
-  .text p{font-size: 10vw;}
+  .text div p{font-size: 10vw;}
   .RpreloadImg{width: 15vh;}
 }
