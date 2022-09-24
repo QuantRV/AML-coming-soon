@@ -11,7 +11,7 @@ function removeTheme() {
 function myFunction() {
     setTimeout(() => {
         preloaderFunction();
-    }, 3150);
+    }, 4070);
     console.log("hii");
     setTimeout(() => {
         removeTheme();
