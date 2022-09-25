@@ -23,6 +23,7 @@ body {
 .RpreloadImg {
     transform-origin: 57.73502691896258% 50%;
     width: 140px;
+    position: absolute;
     animation: rotation 6s infinite linear;
   }
 
@@ -52,7 +53,6 @@ body {
     height: 100%;
     width: 100%;
 }
-
 .text{
   width: 100vw;
   height: 100vh;
@@ -80,4 +80,114 @@ body {
 @media only screen and (max-width: 800px) {
   .text div p{font-size: 10vw;}
   .RpreloadImg{width: 15vh;}
+}
+
+/* animation by zaqi momin */
+.animation_aml{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: auto;
+  animation: anime 5s linear infinite;
+  overflow: hidden;
+  z-index: 0;
+  /* position: absolute; */
+}
+
+span{
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 100%;
+  box-shadow: 0 0 0 4px rgba(225, 225, 255, 0.1);
+  animation: animae 3s linear infinite;
+}
+
+span::before{
+  content: '';
+  position: absolute;
+  transform: translateY(-150%);
+  bottom: 0;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg,#fff,transparent);
+}
+
+@keyframes animae {
+  0%{
+      transform: rotate(90deg) translateX(90vh);
+      opacity: 1;
+  }
+
+  70%{
+      opacity: 1;
+  }
+
+  100%{
+      transform: rotate(90deg) translateX(0vh);
+      opacity: 0;
+  }
+}
+
+span:nth-child(1){
+  top: 0;
+  right: 95%;
+  animation-delay: 0;
+  animation-duration: 10s;
+}
+span:nth-child(2){
+  top: 0;
+  right: 55%;
+  animation-delay: 3s;
+  animation-duration: 12s;
+}
+span:nth-child(3){
+  top: 0;
+  right: 23%;
+  animation-delay: 0.8;
+  animation-duration: 8s;
+}
+span:nth-child(4){
+  top: 0;
+  right: 30%;
+  animation-delay: 0.6;
+  animation-duration: 9s;
+}
+span:nth-child(5){
+  top: 0;
+  right: 45%;
+  animation-delay: 4s;
+  animation-duration: 12s;
+}
+span:nth-child(6){
+  top: 0;
+  right: 15%;
+  animation-delay: 1s;
+  animation-duration: 13s;
+}
+span:nth-child(7){
+  top: 0;
+  right: 62%;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
+}
+span:nth-child(8){
+  top: 0;
+  right: 75%;
+  animation-delay: 2.3s;
+  animation-duration: 15s;
+}
+span:nth-child(9){
+  top: 0;
+  right: 84%;
+  animation-delay: 5s;
+  animation-duration: 15s;
+}
+span:nth-child(10){
+  top: 0;
+  right: 90%;
+  animation-delay: 3.4s;
+  animation-duration: 15s;
 }
