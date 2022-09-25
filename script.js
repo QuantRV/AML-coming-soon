@@ -8,6 +8,14 @@ function removeTheme() {
     document.querySelector(".theme").style.display = "none";
 }
 
+function backgroundAnimation(){
+    document.querySelector(".animation_aml").style.zIndex= "-1";
+}
+
+function backgroundAnimation2(){
+    document.querySelector(".animation_aml").style.zIndex= "0";
+}
+
 function myFunction() {
     setTimeout(() => {
         preloaderFunction();
@@ -15,7 +23,13 @@ function myFunction() {
     console.log("hii");
     setTimeout(() => {
         removeTheme();
-    }, 33500);
+    }, 33000);
+    setTimeout(() => {
+        backgroundAnimation();
+    }, 4070);
+    setTimeout(() => {
+        backgroundAnimation2();
+    }, 27000);
 }
 
 // 2. This code loads the IFrame Player API code asynchronously.
